@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Exo 2", sans-serif;
+}
+
+header.navbar-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-block: 1rem;
+  margin-inline: auto;
+  align-items: center;
+  z-index: 9999;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+header.navbar-container .logo img {
+  width: 150px;
+}
+
+header.navbar-container .nav-list ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-left: 0;
+}
+
+header.navbar-container .nav-list li {
+  list-style: none;
+}
+
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: "Exo 2", sans-serif;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+}
+
+header.navbar-container .nav-list li:hover a {
+  border-bottom: 3px solid black;
+}
+
+header.navbar-container .home a {
+  color: black;
+  font-size: 1.5rem;
+}
+
+main .title {
+  text-align: center;
+  margin-top: 30px;
+}
+
+main .title h1 {
+  font-size: 40px;
+}
+
+main .container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 50px auto;
+}
+
+main .container .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+main .container .card h2 {
+  text-transform: uppercase;
+}
+
+main .container .card img {
+  width: 300px;
+  height: 430px;
+}
+
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+
+main aside .social {
+  height: 100%;
+  display: flex;
+}
+
+main aside .social ul {
+  padding: 1.5rem 1rem;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin: auto;
+  background-color: red;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+main aside .social li {
+  list-style: none;
+}
+
+main aside .social li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+main aside .social li a:hover {
+  color: aqua;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+footer p {
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .home {
+    visibility: hidden;
+  }
+
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+  }
+}
