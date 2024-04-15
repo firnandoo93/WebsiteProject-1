@@ -53,6 +53,18 @@ header.navbar-container .home a {
   font-size: 1.5rem;
 }
 
+main {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+main .content {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
 main .content .jumbotron {
   max-width: 1200px;
   width: 90%;
@@ -86,43 +98,41 @@ main .content .about .history {
   margin-top: 30px;
 }
 
-main aside {
-  position: fixed;
-  inset-block: 0;
-  inset-inline-end: 0;
+.profile header {
+  text-align: center;
 }
 
-main aside .social {
+.profile img {
+  width: 200px;
+}
+
+.box {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+aside {
+  width: 25%;
   height: 100%;
-  display: flex;
 }
 
-main aside .social ul {
-  padding: 1.5rem 1rem;
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
-  margin: auto;
-  background-color: red;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
+.profile header{
+  text-align: center;
 }
 
-main aside .social li {
-  list-style: none;
+.profile img {
+  width: 200px;
 }
 
-main aside .social li a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: white;
-  transition: all 0.1s ease-in-out;
+.profile section{
+  text-align: center;
+  margin-block: 20px;
 }
 
-main aside .social li a:hover {
-  color: aqua;
+.profile section table {
+  text-align: justify;
+  margin: 20px auto;
 }
 
 footer {
@@ -143,5 +153,17 @@ footer p {
 
   header.navbar-container .nav-list ul {
     flex-wrap: wrap;
+  }
+  
+  main {
+    flex-direction: column;
+  }
+
+  main .content {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
   }
 }

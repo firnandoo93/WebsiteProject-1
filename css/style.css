@@ -74,10 +74,7 @@ main .content .news-section {
   display: flex;
   flex-direction: column;
   gap: 100px;
-}
-
-.news-section .headline {
-  margin: 1.5rem auto;
+  text-align: center;
 }
 
 .headline-color {
